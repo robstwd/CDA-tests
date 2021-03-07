@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sch:schema xmlns="http://purl.oclc.org/dsdl/schematron"
-xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+    xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    queryBinding="xslt2">
     <sch:ns uri="http://www.topologi.com/example" prefix="ex"/>
     <sch:pattern name="Check structure">
         <sch:rule context="ex:Person">
