@@ -27,7 +27,7 @@ jobs:
       run: java -jar saxon-he-10.3.jar -s:test.sch -xsl:processing_files/pipeline-for-svrl.xsl -o:validation.xsl
 
     - name: run saxon to validate the sample CDA xml file
-      run: java -jar saxon-he-10.3.jar -o:whereDidIScrewUp.xml -s:Diagnostic_Imaging_Report.xml validation.xsl
+      run: java -jar saxon-he-10.3.jar -o:whereDidIScrewUp.xml -s:Diagnostic_Imaging_Report.xml -xsl:validation.xsl
       
     - name: read validation results file
       run: cat whereDidIScrewUp.xml
