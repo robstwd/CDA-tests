@@ -19,3 +19,9 @@ jobs:
     
     - name: Download Saxon-HE
       run: wget -q https://downloads.sourceforge.net/project/saxon/Saxon-HE/10/Java/SaxonHE10-3J.zip
+      
+    - name: extract Saxon-HE
+      run: 7z e SaxonHE10-3J.zip
+      
+    - name: list
+      run: ls -la
