@@ -23,5 +23,5 @@ jobs:
     - name: extract Saxon-HE
       run: 7z e SaxonHE10-3J.zip
       
-    - name: list
-      run: ls -la
+    - name: run saxon
+      run: java -jar saxon-he-10.3.jar
