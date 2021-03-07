@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+<sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron">
     <sch:ns uri="http://www.topologi.com/example" prefix="ex"/>
     <sch:pattern name="Check structure">
         <sch:rule context="ex:Person">
